@@ -75,12 +75,28 @@
 
                 </p>
                 <p>
-                    <input type="checkbox" name="ofertas" id="news">
+                    <input type="checkbox" name="ofertas" id="news" checked>
                     <label for="news">Deseo recibir información sobre novedades y ofertas</label>
                 </p>
                 <p>
                     <input type="checkbox" name="condiciones" id="privacy">
                     <label for="privacy">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                </p>
+                
+                <p>
+                    <label for="population">Población</label>
+                    <select name="población" id="population">
+                    <option value="">-</option>
+                    <option value="A">Alicante</option>
+                    <option value="M">Madrid</option>
+                    <option value="S">Sevilla</option>
+                    <option value="V">Valencia</option>
+                    </select>
+
+                </p>
+                <p>
+                    <label for="description">Descripción</label> <br>
+                    <textarea name="descripcion" id="description" cols="30" rows="5" placeholder="Escribe aquí tu consulta"></textarea>
                 </p>
                 <p>
                     <button>Enviar</button>

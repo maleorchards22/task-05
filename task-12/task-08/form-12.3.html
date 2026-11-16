@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Título para el navegador y los buscadores -->
+        <title>Clase 12- Formularios en HTML</title>
+
+        <!-- Descripción de la página para los buscadores -->
+        <meta
+            name="description"
+            content="Página de ejemplos vistos en la clase 12: Formularios en HTML"
+        />
+
+        <!-- Palabras clave para los buscadores -->
+        <meta name="keywords" content="form, input, button, select" />
+
+        <!-- Autor de la página -->
+        <meta name="author" content="maleorchards22" />
+
+        <!-- Favicon de la página -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+        <!-- Codificación-->
+        <meta charset="UTF-8" />
+
+        <!-- Para que la web sea responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Para algunos navegadores móviles -->
+        <meta name="theme-color" content="#1e7bbf" />
+    </head>
+
+    <body>
+        <header>
+            <h2>Ejercicio Formulario 12.3</h2>
+            <a href="index.html">Volver atrás 👈</a>
+            <hr />
+        </header>
+
+        <main>
+            <h3>Rellena tu CV</h3>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <p>
+                        <label for="province">Provincia</label> <br />
+                        <select name="provincia" id="province">
+                            <option value="">-selecciona-</option>
+                            <option value="A">Alicante</option>
+                            <option value="M">Madrid</option>
+                            <option value="S">Sevilla</option>
+                            <option value="V">Valencia</option>
+                        </select>
+                    </p>
+                    <p>
+                        Fecha de nacimiento: <br />
+                        <input
+                            type="text"
+                            name="dia"
+                            id="day"
+                            size="2"
+                            maxlenght="2"
+                        />
+                        de
+                        <select name="mes" id="month">
+                            <option value="">-Selecciona-</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                        de
+                        <input
+                            type="text"
+                            name="year"
+                            id="year"
+                            size="4"
+                            maxlenght="4"
+                        />
+                    </p>
+                    <p>
+                        <label for="topics">Temas de interés</label>
+                        <br /><br />
+                        <select name="temas" id="topics" size="5" multiple>
+                            <option value="1">
+                                Administración bases de datos
+                            </option>
+                            <option value="2">Análisis y programación</option>
+                            <option value="3">Arquitectura</option>
+                            <option value="4">Calidad</option>
+                            <option value="5">
+                                ERP, CRM, Bussines intelligence
+                            </option>
+                            <option value="6">Gestión de proyectos</option>
+                            <option value="7">Redes</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </main>
+    </body>
+</html>

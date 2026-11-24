@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web_img_practice</title>
+  </head>
+  <body>
+    <header>
+      <h2>Web Images Practice</h2>
+      <a href="index.html">Volver atrás 👈</a>
+      <hr />
+    </header>
+    <main>
+      <!-- 1. practice with the picture and figure elements by format -->
+      <figure>
+        <picture>
+          <source srcset="teclado.avif" type="image/avif" />
+          <source srcset="teclado.webp" type="image/webp" />
+          <img src="teclado.jpg" alt="Teclado mecánico" />
+        </picture>
+        <figcaption>
+          Teclado mecánico inalámbrico con retroiluminación RGB
+        </figcaption>
+      </figure>
+      <!-- 2. practice with the picture and figure elements by size -->
+
+      <picture>
+        <source media="(width >= 900px)" srcset="big-keyboard.jpg" />
+        <img src="small-keyboard.jpg" alt="mechanical keyboard" />
+      </picture>
+    </main>
+  </body>
+</html>

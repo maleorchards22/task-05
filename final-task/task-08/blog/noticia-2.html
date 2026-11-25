@@ -2,12 +2,12 @@
 <html lang="">
     <head>
         <!-- Título para el navegador y los buscadores -->
-        <title>Proyecto Final HTML| Academia Conquerblocks</title>
+        <title>Artículo de interés| Academia Conquerblocks</title>
 
         <!-- Descripción de la página para los buscadores -->
         <meta
             name="description"
-            content="Proyecto Academia Conquerblocks con los conceptos vistos en clase de HTML"
+            content="Rutas relativas y organización de carpetas en sitios estáticos"
         />
 
         <!-- Autor de la página -->
@@ -31,27 +31,57 @@
             <figure>
                 <img
                     width="150"
-                    src="img/common/logo-conquer.png"
+                    src="../img/common/logo-conquer.png"
                     alt="Logotipo de conquer blocks"
                 />
             </figure>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="../cursos.html">Cursos</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../registro.html">Registro</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <hr />
         </header>
-        <main></main>
+        <main>
+            <article>
+                <h1>
+                    Rutas relativas y organización de carpetas en sitios
+                    estáticos
+                </h1>
+                <figure>
+                    <img
+                        src="../img/blog/rutas-relativas.png"
+                        alt="Estructura de carpetas y rutas relativas en un proyecto web"
+                    />
+                    <figcaption>
+                        Separar páginas y recursos en subcarpetas ordena el
+                        proyecto y exige cuidar las rutas relativas.
+                    </figcaption>
+                </figure>
+                <p>
+                    Organizar los archivos por secciones y recursos —como
+                    separar cursos, artículos del blog e imágenes en sus propias
+                    carpetas— mantiene el proyecto limpio a medida que crece.
+                </p>
+                <p>
+                    Cuando una página está dentro de una subcarpeta, cada ../
+                    sube un nivel en la jerarquía de directorios; revisar este
+                    punto en cada vista evita imágenes rotas y enlaces que no
+                    llevan a donde toca.
+                </p>
+            </article>
+        </main>
         <footer>
+            <hr />
             <p>
                 &copy;Academia Conquerblocks 2026 -
-                <a href="aviso-legal.html">Aviso Legal</a>
+                <a href="../aviso-legal.html">Aviso Legal</a>
             </p>
         </footer>
     </body>

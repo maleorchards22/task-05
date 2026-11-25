@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="">
+<html lang="es">
     <head>
         <!-- Título para el navegador y los buscadores -->
-        <title>Proyecto Final HTML| Academia Conquerblocks</title>
+        <title>Contacto| Academia Conquerblocks</title>
 
         <!-- Descripción de la página para los buscadores -->
         <meta
             name="description"
-            content="Proyecto Academia Conquerblocks con los conceptos vistos en clase de HTML"
+            content="Contáctanos y responderemos tus dudas e inquietudes"
         />
 
         <!-- Autor de la página -->
@@ -37,7 +37,7 @@
             </figure>
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                     <li><a href="cursos.html">Cursos</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -46,11 +46,57 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <hr />
         </header>
-        <main></main>
-        <footer>
+        <main>
+            <h1>Contacto</h1>
             <p>
-                &copy;Academia Conquerblocks 2026 -
+                Escríbenos si tienes dudas sobre los cursos, el acceso o la
+                academia.
+            </p>
+            <section>
+                <h2>Formulario</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Nombre completo</label>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div>
+                        <label for="comments">Comentarios</label> <br />
+                        <textarea
+                            name="comment"
+                            id="comments"
+                            cols="30"
+                            rows="5"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                        <input type="reset" value="Borrar formulario" />
+                    </div>
+                </form>
+            </section>
+            <section>
+                <h2>Nuestra ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1590.1374022616253!2d-3.613959253652233!3d37.14616472430474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1688535349624!5m2!1ses!2ses"
+                    width="500"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </section>
+        </main>
+        <footer>
+            <hr />
+            <p>
+                &copy; Academia Conquerblocks 2026 -
                 <a href="aviso-legal.html">Aviso Legal</a>
             </p>
         </footer>

@@ -2,12 +2,12 @@
 <html lang="">
     <head>
         <!-- Título para el navegador y los buscadores -->
-        <title>Proyecto Final HTML| Academia Conquerblocks</title>
+        <title>Registrate con nosotros| Academia Conquerblocks</title>
 
         <!-- Descripción de la página para los buscadores -->
         <meta
             name="description"
-            content="Proyecto Academia Conquerblocks con los conceptos vistos en clase de HTML"
+            content="Registrate en nuestra academia y accede a nuestros cursos de desarrollo web"
         />
 
         <!-- Autor de la página -->
@@ -37,7 +37,7 @@
             </figure>
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                     <li><a href="cursos.html">Cursos</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -46,11 +46,65 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <hr />
         </header>
-        <main></main>
+        <main>
+            <section>
+                <h1>Registro</h1>
+                <p>
+                    Registrate a nuestra academia y accede a nuestros cursos de
+                    desarrollo web.
+                </p>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="name">Nombre completo</label>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                    <div>
+                        <label for="birthday">Fecha de nacimiento</label>
+                        <input
+                            type="date"
+                            name="birthday"
+                            id="birthday"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div>
+                        <label for="address">Dirección</label>
+                        <input type="text" name="address" id="address" />
+                    </div>
+                    <div>
+                        <label for="web">Página web</label>
+                        <input type="url" name="web" id="web" />
+                    </div>
+                    <div>
+                        <label for="photo">Foto</label>
+                        <input type="file" name="photo" id="photo" />
+                    </div>
+                    <div>
+                        <label for="bio">Biografía</label> <br />
+                        <textarea
+                            name="bio"
+                            id="bio"
+                            cols="30"
+                            rows="5"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                        <input type="reset" value="Borrar formulario" />
+                    </div>
+                </form>
+            </section>
+        </main>
         <footer>
+            <hr />
             <p>
-                &copy;Academia Conquerblocks 2026 -
+                &copy; Academia Conquerblocks 2026 -
                 <a href="aviso-legal.html">Aviso Legal</a>
             </p>
         </footer>
